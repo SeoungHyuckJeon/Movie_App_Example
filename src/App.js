@@ -11,6 +11,12 @@ class App extends React.Component {
   sub = () => {
     this.setState(current => ({ count: current.count - 1 }));
   };
+  componentDidMount() {
+    console.log("Component rendered");
+  }
+  componentDidUpdate() {
+    console.log("Component updated");
+  }
   render() {
     return (
       <div>
